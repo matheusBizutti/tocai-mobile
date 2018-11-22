@@ -14,4 +14,87 @@
 
 <ion-content padding>
 
+    <form #changePersonalData="ngForm" >
+
+      <span padding-top>
+        MEUS DADOS
+      </span>
+
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>Nome</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Sobrenome</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Telefone</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <div class="ion-row" padding>
+          <button
+            ion-button
+            block
+            large
+            color="secondary"
+            (click)="login()">
+            Salvar
+          </button>
+        </div>
+
+      </ion-list>
+
+    </form>
+
+    <hr>
+
+    <form #changePersonalData="ngForm" padding-top >
+
+      <span padding-top>
+        SENHA
+      </span>
+
+      <ion-list>
+
+        <ion-item>
+          <ion-label floating>Senha atual</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Nova senha</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Confirmar senha</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <div class="ion-row" padding>
+          <button
+            ion-button
+            block
+            large
+            color="secondary"
+            (click)="login()">
+            Salvar senha
+          </button>
+        </div>
+
+      </ion-list>
+
+    </form>
+
 </ion-content>

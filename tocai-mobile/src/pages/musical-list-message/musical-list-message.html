@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Enviar mensagem</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-textarea placeholder="Digite aqui sua mensagem" name="note" autocomplete="on" autocorrect="on"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <div class="ion-row" padding>
+      <button
+        ion-button
+        outline
+        block
+        large
+        color="secondary"
+        (click)="login()">
+        Enviar
+      </button>
+    </div>
+
+  </ion-list>
+
+</ion-content>

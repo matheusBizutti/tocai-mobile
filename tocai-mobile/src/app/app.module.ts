@@ -4,11 +4,13 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { MusicalListPageModule } from '../pages/musical-list/musical-list.module';
+import { ProfilePageModule } from '../pages/profile/profile.module';
+import { MusicalListMessagePageModule } from '../pages/musical-list-message/musical-list-message.module';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ProfilePageModule } from '../pages/profile/profile.module';
+import { MusicalListDetailPageModule } from '../pages/musical-list-detail/musical-list-detail.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ProfilePageModule } from '../pages/profile/profile.module';
   ],
   imports: [
     BrowserModule,
+    MusicalListDetailPageModule,
+    MusicalListMessagePageModule,
     MusicalListPageModule,
     ProfilePageModule,
     IonicModule.forRoot(MyApp)

@@ -8,8 +8,8 @@ import { ProfilePage } from '../profile/profile';
 })
 export class TabsPage {
 
-  tab1Root = ProfilePage;
-  tab2Root = MusicalListPage;
+  tab1Root = MusicalListPage;
+  tab2Root = ProfilePage;
 
   constructor() {
 
