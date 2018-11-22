@@ -72,3 +72,19 @@ $app-direction: ltr;
 
 @import "roboto";
 @import "noto-sans";
+
+.font-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-text-uppercase {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.color-link {
+  color: #0c9abe;
+  cursor: pointer;
+}

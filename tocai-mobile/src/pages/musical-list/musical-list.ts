@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { App, IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { LoginPage } from '../login/login';
 
 @IonicPage({
   name: 'musical-list'
@@ -10,7 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MusicalListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public appCtrl: App) {
   }
 
   ionViewDidLoad() {
@@ -19,6 +22,10 @@ export class MusicalListPage {
 
   detail() {
     this.navCtrl.push('musical-list-detail', {id: '0001'});
+  }
+
+  exit(){
+    this.appCtrl.getRootNav().setRoot(LoginPage);
   }
 
   message() {

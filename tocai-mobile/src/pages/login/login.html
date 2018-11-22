@@ -1,0 +1,52 @@
+<ion-content padding>
+
+  <div padding-top>
+
+    <ion-row>
+      <ion-col>
+        <div padding-top justify-content-center class="image-center">
+          <img width="120" height="180" src="./../../assets/imgs/tocai-icon.png" alt="logo-vistocar">
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row padding-top>
+      <ion-col>
+        <ion-list no-padding>
+
+          <ion-item no-padding>
+            <ion-input
+              class="font-default"
+              type="text"
+              placeholder="Email"
+              name="email">
+            </ion-input>
+          </ion-item>
+
+          <ion-item no-padding>
+            <ion-input
+              class="font-default"
+              type="password"
+              placeholder="Senha"
+              name="password">
+            </ion-input>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <div padding-top>
+      <button
+        ion-button
+        block
+        large
+        color="secondary"
+        (click)="login()">
+        Entrar
+      </button>
+    </div>
+
+    </div>
+
+</ion-content>

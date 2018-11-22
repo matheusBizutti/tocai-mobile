@@ -1,21 +1,25 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TabsPage } from '../tabs/tabs';
 
 @IonicPage({
-  name: 'musical-list-detail'
+  name: 'login'
 })
 @Component({
-  selector: 'page-musical-list-detail',
-  templateUrl: 'musical-list-detail.html',
+  selector: 'page-login',
+  templateUrl: 'login.html',
 })
-export class MusicalListDetailPage {
+export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log('ID: ',navParams.get('id'));
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MusicalListDetailPage');
+    console.log('ionViewDidLoad LoginPage');
+  }
+
+  login() {
+    this.navCtrl.setRoot(TabsPage);
   }
 
 }

@@ -14,3 +14,23 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.bold {
+  font-weight: bold;
+}
+
+.font-title {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-text-uppercase {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.color-link {
+  color: #0c9abe;
+  cursor: pointer;
+}
