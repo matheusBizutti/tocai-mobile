@@ -17,7 +17,7 @@
     </ion-row>
     <ion-row padding-bottom justify-content-center>
       <label class="font-text-uppercase bold">
-        SERTANEJO
+        {{ musicalstyle }}
       </label>
     </ion-row>
 
@@ -27,7 +27,9 @@
       </label>
     </ion-row>
     <ion-row padding-bottom justify-content-center>
-      <a class="color-link bold" href="https://www.youtube.com/watch?v=fggtYUdTMWk">https://www.youtube.com/watch?v=fggtYUdTMWk</a>
+      <a class="color-link bold" href="{{ linkyoutube }}">
+        {{ linkyoutube }}
+      </a>
     </ion-row>
 
     <ion-row padding-top justify-content-center>
@@ -36,24 +38,26 @@
       </label>
     </ion-row>
     <ion-row padding-bottom justify-content-center>
-      <a class="color-link bold" href="https://www.youtube.com/watch?v=fggtYUdTMWk">https://www.youtube.com/watch?v=fggtYUdTMWk</a>
+      <a class="color-link bold" href="{{ linkspotify }}">
+        {{ linkspotify }}
+      </a>
     </ion-row>
 
     <ion-row padding-top justify-content-center>
       <label class="font-title">
-        SPOTIFY
+        CONTATOS
       </label>
     </ion-row>
     <ion-row justify-content-center>
       <label class="bold">
-        TELEFONE: (11) 96345-7288
+        TELEFONE: {{ telefone }}
       </label>
     </ion-row>
     <ion-row justify-content-center>
       <label class="bold">
         E-MAIL:
       </label>
-       <a class="color-link bold" href="mailto:jm.oficial@gmail.com">jm.oficial@gmail.com</a>
+       <a class="color-link bold" href="mailto:{{ emailDetail }}">{{ emailDetail }}</a>
     </ion-row>
 
   </div>

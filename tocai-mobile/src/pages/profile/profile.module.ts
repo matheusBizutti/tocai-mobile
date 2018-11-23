@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { ProfilePage } from './profile';
+import { ProfileService } from './profile.service';
 
 @NgModule({
   declarations: [
@@ -9,5 +10,6 @@ import { ProfilePage } from './profile';
   imports: [
     IonicPageModule.forChild(ProfilePage),
   ],
+  providers: [ProfileService]
 })
 export class ProfilePageModule {}

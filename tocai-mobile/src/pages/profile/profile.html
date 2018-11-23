@@ -16,87 +16,47 @@
 
 <ion-content padding>
 
-    <form #changePersonalData="ngForm" >
+  <form #changePersonalData="ngForm" padding-top >
 
-      <span padding-top>
-        MEUS DADOS
-      </span>
+    <span padding-top>
+      SENHA
+    </span>
 
-      <ion-list>
+    <ion-list>
 
-        <ion-item>
-          <ion-label floating>Nome</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
+      <ion-item>
+        <ion-label floating>Senha atual</ion-label>
+        <ion-input type="text" name="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
 
-        <ion-item>
-          <ion-label floating>Sobrenome</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
+      <ion-item>
+        <ion-label floating>Nova senha</ion-label>
+        <ion-input type="text" name="newpassword" [(ngModel)]="newpassword"></ion-input>
+      </ion-item>
 
-        <ion-item>
-          <ion-label floating>Email</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
+      <ion-item>
+        <ion-label floating>Confirmar senha</ion-label>
+        <ion-input type="text" name="confirmpassword" [(ngModel)]="confirmpassword"></ion-input>
+      </ion-item>
 
-        <ion-item>
-          <ion-label floating>Telefone</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" name="email" [(ngModel)]="email"></ion-input>
+      </ion-item>
 
-        <div class="ion-row" padding>
-          <button
-            ion-button
-            block
-            large
-            color="secondary"
-            (click)="login()">
-            Salvar
-          </button>
-        </div>
+      <div class="ion-row" padding>
+        <button
+          ion-button
+          block
+          large
+          color="secondary"
+          (click)="changePassword()">
+          Salvar senha
+        </button>
+      </div>
 
-      </ion-list>
+    </ion-list>
 
-    </form>
-
-    <hr>
-
-    <form #changePersonalData="ngForm" padding-top >
-
-      <span padding-top>
-        SENHA
-      </span>
-
-      <ion-list>
-
-        <ion-item>
-          <ion-label floating>Senha atual</ion-label>
-          <ion-input type="text"></ion-input>
-        </ion-item>
-
-        <ion-item>
-          <ion-label floating>Nova senha</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
-
-        <ion-item>
-          <ion-label floating>Confirmar senha</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
-
-        <div class="ion-row" padding>
-          <button
-            ion-button
-            block
-            large
-            color="secondary"
-            (click)="login()">
-            Salvar senha
-          </button>
-        </div>
-
-      </ion-list>
-
-    </form>
+  </form>
 
 </ion-content>

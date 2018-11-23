@@ -12,6 +12,14 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MusicalListDetailPageModule } from '../pages/musical-list-detail/musical-list-detail.module';
+import { HttpClientModule } from '@angular/common/http';
+import { BaseUrl } from './baseurl/baseurl.service';
+import { InterceptorModule } from './interceptor/interceptor.module';
+import { AuthService } from './auth/auth.service';
+import { CookieService } from 'ngx-cookie-service';
+import { RouterModule } from '@angular/router';
+import { LoginPage } from '../pages/login/login';
+import { ToasterService } from './toaster/toaster.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +28,14 @@ import { MusicalListDetailPageModule } from '../pages/musical-list-detail/musica
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     LoginPageModule,
+    InterceptorModule,
+    RouterModule.forRoot(
+      [
+        { path: "", component: LoginPage}
+      ]
+    ),
     MusicalListDetailPageModule,
     MusicalListMessagePageModule,
     MusicalListPageModule,
@@ -34,6 +49,10 @@ import { MusicalListDetailPageModule } from '../pages/musical-list-detail/musica
   ],
   providers: [
     StatusBar,
+    BaseUrl,
+    AuthService,
+    CookieService,
+    ToasterService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

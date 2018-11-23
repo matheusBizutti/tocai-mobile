@@ -17,12 +17,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MusicalListMessagePage {
 
+  private email;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    console.log('ID: ',navParams.get('id'));
+    this.email = navParams.get('email');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MusicalListMessagePage');
-  }
+  ionViewDidLoad() {}
 
 }
