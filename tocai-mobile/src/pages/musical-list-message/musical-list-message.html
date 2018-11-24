@@ -11,17 +11,18 @@
   <ion-list>
 
     <ion-item>
-      <ion-textarea placeholder="Digite aqui sua mensagem" name="note" autocomplete="on" autocorrect="on"></ion-textarea>
+      <ion-textarea
+        placeholder="Digite aqui sua mensagem"
+        name="note"
+        [(ngModel)]="sendmail.html"
+        autocomplete="on"
+        autocorrect="on">
+      </ion-textarea>
     </ion-item>
 
     <ion-item>
-      <ion-label floating>Nome</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label floating>Email</ion-label>
-      <ion-input type="email"></ion-input>
+      <ion-label floating>Titulo do e-mail</ion-label>
+      <ion-input type="text" name="subject" [(ngModel)]="sendmail.subject"></ion-input>
     </ion-item>
 
     <div class="ion-row" padding>
@@ -31,7 +32,7 @@
         block
         large
         color="secondary"
-        (click)="login()">
+        (click)="sendMail()">
         Enviar
       </button>
     </div>
